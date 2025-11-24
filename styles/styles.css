@@ -1,0 +1,41 @@
+
+body {
+    background-color: #DFD3BB;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #793B40;
+}
+
+nav {
+    color: #793B40;
+    height: 4rem;
+    text-decoration: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+#logo_index {
+    font-family: "Jersey 10 Charted", sans-serif;
+    font-size: 2rem;
+}
+
+#nav_index {
+    display: flex;
+    justify-content: space-between;
+    gap: 5rem;
+}
+
+#pick {
+    height: 9rem;
+    align-content: center;
+    text-align: center;
+    width: 100%;
+    background-color: #793B40;
+    color: #DFD3BB;
+}
