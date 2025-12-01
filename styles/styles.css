@@ -15,7 +15,7 @@ a {
     color: #793B40;
 }
 
-p {
+.thrifting p {
     padding-left: 420px;
     color: #793B40;
     font-size: 1.5rem;
@@ -34,6 +34,16 @@ nav {
     padding-right: 2rem; */
     padding-top: 0;
     padding-bottom: 0;
+}
+
+#nav-overlay {
+  position: absolute;   /* take it out of normal flow */
+  top: 0;               /* place at top of page */
+  left: 200px;              /* align left */
+  width: 2.9rem;          /* stretch across nav if needed */
+  height: auto;
+  z-index: 999;         /* ensures it sits above nav */
+  pointer-events: none; /* optional: lets clicks pass through to nav links */
 }
 
 a:hover {
