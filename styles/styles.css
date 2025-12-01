@@ -2,6 +2,12 @@
 body {
     background-color: #DFD3BB;
     margin: 0;
+    padding: 0;
+}
+
+html, body {
+  overflow-x: hidden;   /* hides horizontal scrollbars */
+  width: 100%;          /* ensures full width */
 }
 
 a {
@@ -9,26 +15,46 @@ a {
     color: #793B40;
 }
 
+p {
+    padding-left: 420px;
+    color: #793B40;
+    font-size: 1.5rem;
+    margin-top: 10rem;
+    margin-bottom: 2rem;
+}
+
 nav {
     color: #793B40;
-    height: 4rem;
+    height: 3rem;
     text-decoration: none;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-left: 2rem;
-    padding-right: 2rem;
+    /* padding-left: 2rem;
+    padding-right: 2rem; */
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+a:hover {
+    text-decoration: underline;
 }
 
 #logo_index {
     font-family: "Jersey 10 Charted", sans-serif;
-    font-size: 2rem;
+    font-size: 3rem;
+    overflow: hidden; 
 }
 
 #nav_index {
+    position: absolute;
+    right: 2rem;
     display: flex;
     justify-content: space-between;
     gap: 5rem;
+    font-style: italic;
+    font-weight: bolder;
+    font-size: 1.25rem;
 }
 
 #pick {
@@ -38,4 +64,161 @@ nav {
     width: 100%;
     background-color: #793B40;
     color: #DFD3BB;
+    font-style: italic;
+    font-weight: lighter;
+}
+
+.definition-wrapper {
+  display: flex;
+  align-items: flex-start;
+  gap: -5rem;
+  max-width: 1000px;
+  margin: auto;
+  padding-top: 4rem;
+}
+
+#zipper {
+  max-width: 200px;
+  height: auto;
+  object-fit: cover;
+  margin-top: 6.5rem;
+  margin-left: 0rem;
+  margin-right: -6rem;
+}
+
+#def {
+  background-color: #DFD3BB;
+  color: #793B40;
+  font-family: 'Comic Relief', sans-serif;
+  padding: 3rem;
+  max-width: 600px;
+  margin: auto;
+}
+
+.word {
+  font-size: 3.25rem;
+  font-weight: bold;
+  margin-bottom: 0.3rem;
+}
+
+.type {
+  font-size: 1.75rem;
+  font-style: italic;
+  margin-left: 0.75rem;
+}
+
+.pronunciation {
+  font-style: italic;
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.definitions {
+  padding-left: 1.8rem;
+  font-size: 1.25rem;
+}
+
+.definitions li {
+  margin-bottom: 1.2rem;
+  line-height: 2.25;
+}
+
+#build_wrapper {
+  position: relative; /* establishes positioning context */
+  display: inline-block;
+}
+
+
+#build {
+    font-family: "Jersey 10 Charted", sans-serif;
+    font-size: 4.5rem;
+    color: #793B40;
+    white-space: nowrap;
+    overflow: hidden; 
+    margin-top: 6rem;
+    margin-bottom: 2rem;
+}
+
+.play {
+  top: 95px;
+  left: 1000px;
+  position: absolute;
+  width: 200px;
+  background-color: #793B40;
+  border: none;
+  color: #DFD3BB;
+  padding: 20px;
+  padding-left: 50px;
+  padding-right: 50px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.5rem;
+  margin: 4px 2px;
+  border-radius: 50px;
+  border: solid 2px #DFD3BB;
+  overflow: hidden; 
+}
+
+.image-scroller1 {
+  overflow: hidden;
+  width: 100%;
+  
+}
+
+.image-track1 {
+  display: flex;
+  gap: 1rem;
+  animation: scrollTrack1 40s linear infinite;
+}
+
+.image-track1 img {
+  height: 200px;
+  flex-shrink: 0;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+@keyframes scrollTrack1 {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); } /* adjust based on total width */
+}
+
+#shop {
+    font-family: "Jersey 10 Charted", sans-serif;
+    font-size: 4.5rem;
+    color: #793B40;
+    white-space: nowrap;
+    overflow: hidden; 
+    margin-top: 0rem;
+    margin-bottom: 2rem;
+}
+
+.image-scroller1 {
+  overflow: hidden;
+  width: 100%;
+  margin-bottom: 6rem;
+}
+
+.image-track2 {
+  display: flex;
+  gap: 1rem;
+  animation: scrollTrack2 20s linear infinite;
+}
+
+.image-track2 img {
+  height: 300px;
+  flex-shrink: 0;
+  border-radius: 8px;
+  object-fit: cover;
+  overflow: hidden;
+}
+
+@keyframes scrollTrack2 {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); } /* adjust based on total width */
+}
+
+main {
+    margin-bottom: 10rem;
 }
