@@ -213,7 +213,13 @@ nav {
 .image-track2 {
   display: flex;
   gap: 1rem;
-  animation: scrollTrack2 20s linear infinite;
+  animation: scrollTrack2 10s linear infinite;
+}
+
+.image-track2:hover {
+  display: flex;
+  gap: 1rem;
+  animation-play-state: paused;
 }
 
 .image-track2 img {
@@ -249,6 +255,10 @@ main {
     font-style: italic;
     font-size: 1.25rem;
     color: #DFD3BB;
+}
+
+#bottom_nav a:hover {
+    text-decoration: underline;
 }
 
 #pattern {
